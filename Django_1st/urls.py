@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from enbase import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('enbase/', include('enbase.urls')),
+    path('', include('enbase.urls')),
 ]
